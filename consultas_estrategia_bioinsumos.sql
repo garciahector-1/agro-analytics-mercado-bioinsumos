@@ -1,6 +1,7 @@
 -- ==============================================================================
 -- PROYECTO: AGRO-ANALYTICS - ESTRATEGIA COMERCIAL DE BIOINSUMOS EN EL MERCOSUR
--- AUTOR: Técnico Agropecuario & Analista de Datos
+-- AUTOR: [Héctor García]
+-- PERFIL: Técnico Agropecuario & Estudiante Avanzado de Biotecnología
 -- OBJETIVO: Inteligencia de datos y modelos predictivos para la campaña 2026/27
 -- ==============================================================================
 
