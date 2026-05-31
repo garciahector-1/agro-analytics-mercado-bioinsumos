@@ -1,5 +1,5 @@
 # Agro-Analytics Mercosur 2026 🌾📊
-![Dashboard Agro-Analytics](dashboard.png)
+<p align="center"><img src="dashboard.png" width="600"></p>
 Proyecto interdisciplinario de modelado predictivo y análisis de datos enfocado en la evaluación del impacto económico y el Retorno de Inversión (ROI) del uso de bioinsumos bajo escenarios de estrés hídrico extremo en el Mercosur (Campaña 2026/27).
 
 **Origen del Proyecto:** Desarrollado desde una perspectiva interdisciplinaria que fusiona las ciencias agrarias, el análisis de datos y la **biotecnología**. Como técnico agropecuario y estudiante avanzado de biotecnología, el objetivo central es cruzar datos macroeconómicos oficiales, registros meteorológicos históricos de la NASA y ensayos de respuesta biológica (fisiología y metabolismo vegetal) para diseñar estrategias comerciales eficientes y maximizar el Retorno de la Inversión (ROI) del productor ante escenarios de estrés climático extremo.
