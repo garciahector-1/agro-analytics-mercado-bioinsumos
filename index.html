@@ -13,19 +13,19 @@
             --light: #f8f9fa;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #eef2f3; color: var(--dark); display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .deck-container { width: 900px; height: 560px; background: white; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); display: flex; flex-direction: column; overflow: hidden; position: relative; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #eef2f3; color: var(--dark); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+        .deck-container { width: 900px; height: 580px; background: white; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); display: flex; flex-direction: column; overflow: hidden; position: relative; }
         .progress-bar { height: 6px; background: #ddd; width: 100%; }
         .progress-fill { height: 100%; background: var(--accent); width: 3.84%; transition: width 0.3s ease; }
-        .slide { flex: 1; display: none; padding: 40px 50px; flex-direction: column; justify-content: center; }
+        .slide { flex: 1; display: none; padding: 35px 50px; flex-direction: column; justify-content: center; overflow-y: auto; }
         .slide.active { display: flex; }
-        h1 { font-size: 32px; color: var(--primary); margin-bottom: 15px; border-bottom: 3px solid var(--accent); padding-bottom: 8px; display: inline-block; }
-        h2 { font-size: 24px; color: var(--secondary); margin-bottom: 15px; }
-        p { font-size: 16px; line-height: 1.6; margin-bottom: 15px; }
-        ul { margin-left: 25px; margin-bottom: 15px; font-size: 15px; line-height: 1.5; }
-        li { margin-bottom: 8px; }
+        h1 { font-size: 30px; color: var(--primary); margin-bottom: 12px; border-bottom: 3px solid var(--accent); padding-bottom: 6px; display: inline-block; }
+        h2 { font-size: 22px; color: var(--secondary); margin-bottom: 12px; }
+        p { font-size: 15px; line-height: 1.6; margin-bottom: 12px; }
+        ul { margin-left: 25px; margin-bottom: 12px; font-size: 15px; line-height: 1.5; }
+        li { margin-bottom: 6px; }
         .highlight { font-weight: bold; color: var(--accent); }
-        .controls { height: 60px; background: var(--primary); display: flex; justify-content: space-between; align-items: center; padding: 0 30px; }
+        .controls { height: 60px; background: var(--primary); display: flex; justify-content: space-between; align-items: center; padding: 0 30px; min-height: 60px; }
         .btn { background: var(--secondary); color: white; border: none; padding: 8px 20px; font-size: 14px; font-weight: bold; border-radius: 5px; cursor: pointer; transition: background 0.2s; }
         .btn:hover { background: var(--accent); }
         .slide-number { color: white; font-size: 14px; opacity: 0.8; }
@@ -44,9 +44,9 @@
 
     <div class="slide active">
         <span class="badge">ESTRATEGIA COMERCIAL & BIOTECNOLOGÍA 2026/27</span>
-        <h1 style="font-size: 38px; margin-top: 15px;">Agro-Analytics Mercosur</h1>
-        <h2 style="font-size: 22px; font-weight: 400; color: #555;">Modelado Predictivo y Retorno de Inversión (ROI) de Bioinsumos bajo Estrés Climático Severo</h2>
-        <div style="margin-top: 20px; background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 5px solid var(--primary);">
+        <h1 style="font-size: 36px; margin-top: 10px;">Agro-Analytics Mercosur</h1>
+        <h2 style="font-size: 20px; font-weight: 400; color: #555;">Modelado Predictivo y Retorno de Inversión (ROI) de Bioinsumos bajo Estrés Climático Severo</h2>
+        <div style="margin-top: 15px; background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 5px solid var(--primary);">
             <p style="margin: 0; padding-bottom: 5px;"><strong>Autor:</strong> Héctor García</p>
             <p style="margin: 0; padding-bottom: 5px;"><strong>Perfil Académico:</strong> Técnico Agropecuario & Estudiante Avanzado de Biotecnología</p>
             <p style="margin: 0;"><strong>Enfoque Científico-Comercial:</strong> Modelado de datos macroeconómicos cruzados con respuestas metabólicas y fisiológicas vegetales para la mitigación del riesgo predictivo.</p>
@@ -89,7 +89,7 @@
         <h1>3. Arquitectura del Motor de Datos</h1>
         <h2>Procesamiento robusto mediante PostgreSQL</h2>
         <p>Para garantizar la escalabilidad de la estrategia comercial, los datos crudos del Mercosur fueron procesados en un motor de base de datos relacional robusto.</p>
-        <div class="card" style="font-family: monospace; background: #2c3e50; color: #ecf0f1; border-left: 4px solid var(--accent);">
+        <div class="card" style="font-family: monospace; background: #2c3e50; color: #ecf0f1; border-left: 4px solid var(--accent); font-size: 14px;">
             -- Uso de Subconsultas Avanzadas (CTEs)<br>
             WITH escenario_consolidado AS (<br>
             &nbsp;&nbsp;SELECT escenario, region, (rendimiento * precio_venta) AS ingresos_brutos...<br>
@@ -184,199 +184,4 @@
                     <td style="padding: 10px; border: 1px solid #ddd;">2.100 kg/ha</td>
                     <td style="padding: 10px; border: 1px solid #ddd;">USD 0,43 / kg</td>
                     <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: var(--secondary);">USD 63,00</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: var(--accent);">2,98x</td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="font-size: 13px; margin-top: 15px; color: #555;">La consistencia del ROI (superior a 2,9x en ambos extremos) demuestra la viabilidad del modelo comercial independientemente del ciclo climático dominante.</p>
-    </div>
-
-    <div class="slide">
-        <h1>10. Conclusión Comercial: Estabilidad del Negocio</h1>
-        <h2>La biotecnología como un escudo financiero contracíclico</h2>
-        <p>Para la junta directiva y el equipo comercial, la conclusión es contundente: <strong>La adopción de bioinsumos dejó de ser una decisión puramente ambiental para convertirse en una estrategia de cobertura financiera</strong>.</p>
-        <div class="card">
-            <strong>Desacople del Riesgo Absoluto:</strong> El modelo prueba que el uso de solubilizadores de fósforo y protectores celulares mantiene el ROI stable en un piso de <span class="highlight">2,98x</span> en la peor seca y sube a <span class="highlight">3,28x</span> en el peor exceso hídrico. Logramos estabilizar los retornos en ambientes de alta volatilidad macroeconómica y climática.
-        </div>
-    </div>
-
-    <div class="slide">
-        <h1>11. Recomendaciones de Inversión Corporativa</h1>
-        <h2>Plan de acción comercial para el posicionamiento regional</h2>
-        <p>Para maximizar la captura de valor en la campaña Mercosur 2026/27, se recomiendan tres acciones de mercado inmediatas:</p>
-        <ul>
-            <li><strong>Pre-contratación de Capacidad Aerotransportada:</strong> Firmar acuerdos de logística en Zona Núcleo antes del inicio de campaña bajo alertas de "Niño", asegurando la tarifa de USD 14/ha y evitando sobrecostos de mercado spot.</li>
-            <li><strong>Foco Comercial en Suelos Degradados:</strong> Direccionar la fuerza de ventas hacia regiones con suelos arenosos (Cerrado), donde el multiplicador de valor biológico es óptimo frente a la lixiviación.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <span class="badge" style="background: var(--secondary);">PORTAFOLIO PROFESIONAL</span>
-        <h1 style="margin-top: 15px;">¿Hablamos de Datos y Agronegocios?</h1>
-        <h2 style="font-weight: 400; color: #555;">Héctor García • Técnico Agropecuario & Estudiante Avanzado de Biotecnología</h2>
-        <p>Estoy enfocado en transformar la complejidad de los datos de campo, los registros meteorológicos y las métricas e interacciones biológicas celulares en dashboards de alta fidelidad y modelos comerciales predictivos que aseguren rentabilidad en el sector Agrotech.</p>
-        
-        <div style="background: var(--light); padding: 25px; border-radius: 8px; margin-top: 10px; border-left: 5px solid var(--accent);">
-            <p style="margin-bottom: 8px;"><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/h%C3%A9ctor-garc%C3%ADa-aa4687227/" target="_blank">linkedin.com/in/héctor-garcía-aa4687227/</a></p>
-            <p style="margin-bottom: 8px;"><strong>📩 Correo Laboral:</strong> <a href="mailto:garciahector4toa@gmail.com">garciahector4toa@gmail.com</a></p>
-            <p style="margin-bottom: 0;"><strong>💻 GitHub:</strong> <a href="https://github.com/garciahector-1" target="_blank">github.com/garciahector-1</a></p>
-        </div>
-        <div class="footer-credits" style="margin-top: 20px;">
-            <span>Especialista Agrotech & Business Intelligence</span>
-            <span>Próxima página: Versão em Português ➡️</span>
-        </div>
-    </div>
-
-
-    <div class="slide">
-        <span class="badge">ESTRATÉGIA COMERCIAL & BIOTECNOLOGIA 2026/27</span>
-        <h1 style="font-size: 38px; margin-top: 15px;">Agro-Analytics Mercosur</h1>
-        <h2 style="font-size: 22px; font-weight: 400; color: #555;">Modelagem Preditiva e Retorno sobre o Investimento (ROI) de Bioinsumos sob Estresse Climático Severo</h2>
-        <div style="margin-top: 25px; background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 5px solid var(--primary);">
-            <p style="margin: 0; padding-bottom: 5px;"><strong>Autor:</strong> Héctor García</p>
-            <p style="margin: 0; padding-bottom: 5px;"><strong>Perfil Acadêmico:</strong> Técnico Agropecuário & Estudante Avançado de Biotecnologia</p>
-            <p style="margin: 0;"><strong>Abordagem Científico-Comercial:</strong> Modelagem de dados macroeconômicos cruzados com respostas metabólicas e fisiológicas vegetais para a mitigação do risco preditivo.</p>
-        </div>
-        <div class="footer-credits">
-            <span>Mercosul • Safra Agrícola 2026/27</span>
-            <span>Versão em Português</span>
-        </div>
-    </div>
-
-    <div class="slide">
-        <h1>1. O Desafio da Variabilidade Climática</h1>
-        <h2>O impacto latente de "El Niño" e "La Niña" nas finanças do produtor</h2>
-        <p>O rendimento das culturas está diretamente atrelado a variáveis biológicas e meteorológicas extremas. Os extremos hídricos severos causam perdas massivas de capital se o manejo for puramente reativo.</p>
-        <div class="flex-container">
-            <div class="card">
-                <span class="highlight">Cenário Úmido (Niño):</span> Provoca saturação dos solos, lavagem de nutrientes essenciais (lixiviação) e bloqueios severos na logística de fertilização terrestre tradicional.
-            </div>
-            <div class="card">
-                <span class="highlight">Cenário Seco (Niña):</span> Provoca estresse hídrico prolongado, senescência celular antecipada e aborto de estruturas reprodutivas, destruindo o teto produtivo.
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <h1>2. Abordagem Interdisciplinar</h1>
-        <h2>Fusão de Ciências Agrárias, Biotecnologia e Ciência de Dados</h2>
-        <p>Este modelo quebra o silo tradicional que separa a agronomia das finanças corporativas. Não analisamos a biologia de forma isolada; nós a traduzimos em <span class="highlight">Margens Líquidas Indexadas</span>.</p>
-        <ul>
-            <li><strong>Ciências Agrárias:</strong> Análise das dinâmicas solo-planta-atmósfera em regiões-chave do Mercosul.</li>
-            <li><strong>Biotecnologia Vegetal:</strong> Avaliação metabólica de indutores foliares, solubilizadores de fósforo e fixadores biológicos de nitrogênio que defendem a produtividade.</li>
-            <li><strong>Ciência de Dados:</strong> Modelagem matemática em bancos de dados relacionais integrando registros meteorológicos satelitais (NASA) e custos comerciais reais.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h1>3. Arquitetura do Motor de Dados</h1>
-        <h2>Processamento robusto via PostgreSQL</h2>
-        <p>Para garantir a escalabilidade da estratégia comercial, os dados brutos do Mercosul foram processados em um motor de banco de dados relacional robusto.</p>
-        <div class="card" style="font-family: monospace; background: #2c3e50; color: #ecf0f1; border-left: 4px solid var(--accent);">
-            -- Uso de Subconsultas Avanzadas (CTEs)<br>
-            WITH cenario_consolidado AS (<br>
-            &nbsp;&nbsp;SELECT cenario, region, (rendimiento * preco_venda) AS faturamento_bruto...<br>
-            ) SELECT *, (faturamento_bruto - custos_totais) AS margem_liquida_usd_ha FROM ...
-        </div>
-        <p style="font-size: 13px; margin-top: 10px; color: #666;">A lógica SQL permitiu unificar os custos operacionais logísticos variáveis e indexar os preços comerciais por escassez regional automaticamente.</p>
-    </div>
-
-    <div class="slide">
-        <h1>4. Inteligência de Negócios Interativa</h1>
-        <h2>Arquitetura de Eixo Duplo no Looker Studio</h2>
-        <p>O erro comum nos dashboards tradicionais é plotar variáveis com escalas incompatíveis no mesmo plano. Nosso modelo soluciona isso por meio de um design analítico de <span class="highlight">Eixo Y Duplo</span>.</p>
-        <ul>
-            <li><strong>Eixo Esquerdo (Métricas Monetárias):</strong> Representa a Margem Líquida Projetada medida em USD/ha (Escala de 0 a 80 USD).</li>
-            <li><strong>Eixo Direito (Métricas de Eficiência):</strong> Representa o multiplicador puro do Retorno sobre o Investimento (ROI Projetado, Escala de 0 a 3,5x).</li>
-        </ul>
-        <p>Isso permite à diretoria corporativa correlacionar instantaneamente o volume de dinheiro capturado com a eficiência de cada dólar investido por região.</p>
-    </div>
-
-    <div class="slide">
-        <h1>5. O Alcance Geográfico (Mercosul)</h1>
-        <h2>Três ecorregiões agroclimáticas estratégicas analisadas</h2>
-        <p>O modelo preditivo para a safra 2026/27 roda sobre três nós produtivos con realidades edáficas e logísticas completamente distintas:</p>
-        <div class="flex-container">
-            <div class="card">
-                <strong>Zona Núcleo (Pergamino, ARG)</strong><br>Solos pesados de alta capacidade de retenção. Alta resposta ao nitrogênio foliar.
-            </div>
-            <div class="card">
-                <strong>Região Chaco (Chacabuco, ARG)</strong><br>Ambiente de alta evapotranspiração e risco térmico elevado durante o período crítico.
-            </div>
-            <div class="card">
-                <strong>Brasil Cerrado (Mato Grosso, BR)</strong><br>Solos arenosos com alta lixiviação de nutrientes sob chuvas tropicais contínuas.
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <h1>6. Logística Preditiva e Gestão de Risco</h1>
-        <h2>Modelagem de custos de contingência climática na Zona Núcleo</h2>
-        <p>A análise preditiva vai além do talhão; contempla o colapso da infraestrutura regional. O modelo prevê que diante de um cenário de <strong>Niño Extremo</strong>, o trânsito terrestre torna-se inviável.</p>
-        <div class="card">
-            <strong>Impacto nos Custos:</strong> O sistema ativa automaticamente um alerta de contratação preventiva de <strong>Aviação Agrícola (+USD 14/ha)</strong> para la aplicação de indutores foliares.<br>
-            <strong>Impacto Biológico:</strong> Esta decisão crítica defende com sucesso um potencial de <strong>+350 kg/ha</strong> ao mitigar a hipóxia radicular a tempo.
-        </div>
-    </div>
-
-    <div class="slide">
-        <h1>7. Cenário: Brasil Cerrado (Niño Extremo)</h1>
-        <h2>Saturação hídrica e lavagem de nutrientes em Mato Grosso</h2>
-        <p>As chuvas torrenciais no Cerrado lixiviam os fertilizantes tradicionais. É aqui que a biotecnologia aplicada aos solos mostra sua maior resiliência financeira.</p>
-        <ul>
-            <li><strong>Faturamento Bruto Projetado:</strong> USD 1.440,00 / ha (Produtividade de 3.600 kg/ha x Preço USD 0,40/kg).</li>
-            <li><strong>Custo Total Computado:</strong> USD 1.364,00 / ha (Inclui o custo operacional logístico por excesso de umidade de USD 14,00 / ha).</li>
-            <li><strong>Resultado Directo:</strong> <span class="highlight">Margem Líquida de USD 76,00 / ha</span> e um <span class="highlight">ROI de 3,28x</span> sobre o pacote biológico aplicado.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h1>8. Cenário: Brasil Cerrado (Niña / Seco)</h1>
-        <h2>Estrategia defensiva diante de estresse hídrico severo</h2>
-        <p>Quando a água falta no Cerrado, a produtividade cai abruptamente, mas o mercado compensa parcialmente via preços devido à escassez de oferta regional.</p>
-        <ul>
-            <li><strong>Faturamento Bruto Projetado:</strong> USD 903,00 / ha (Quebra de produtividade para 2.100 kg/ha x Preço valorizado de USD 0,43/kg).</li>
-            <li><strong>Custo Total Computado:</strong> USD 840,00 / ha (Zero custo de contingência logística terrestre).</li>
-            <li><strong>Eficiência Defensiva:</strong> <span class="highlight">Margem Líquida de USD 63,00 / ha</span> sustentando um <span class="highlight">ROI de 2,98x</span>. O bioinsumo atua protegendo as paredes celulares da planta.</li>
-        </ul>
-    </div>
-
-    <div class="slide">
-        <h1>9. Matriz Comparativa de Desempenho Financeiro</h1>
-        <h2>Avaliação cruzada de margens líquidas e retornos reais</h2>
-        <table style="width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 14px;">
-            <thead>
-                <tr style="background: var(--primary); color: white; text-align: left;">
-                    <th style="padding: 10px; border: 1px solid #ddd;">Cenário / Região</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">Produtividade</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">Preço Base</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">Margem Líquida</th>
-                    <th style="padding: 10px; border: 1px solid #ddd;">ROI Comercial</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="background: #fff;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">Mato Grosso (Niño)</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">3.600 kg/ha</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">USD 0,40 / kg</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: var(--secondary);">USD 76,00</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: var(--accent);">3,28x</td>
-                </tr>
-                <tr style="background: #f9f9f9;">
-                    <td style="padding: 10px; border: 1px solid #ddd;">Mato Grosso (Niña)</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">2.100 kg/ha</td>
-                    <td style="padding: 10px; border: 1px solid #ddd;">USD 0,43 / kg</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: var(--secondary);">USD 63,00</td>
-                    <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: var(--accent);">2,98x</td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="font-size: 13px; margin-top: 15px; color: #555;">A consistência do ROI (superior a 2,9x em ambos os extremos) demonstra a viabilidade do modelo comercial independentemente do ciclo climático dominante.</p>
-    </div>
-
-    <div class="slide">
-        <h1>10. Conclusão Comercial: Estabilidade do Negócio</h1>
-        <h2>A biotecnologia como um escudo financeiro contracíclico</h2>
-        <p>Para a diretoria e a equipe comercial, a conclusão é contundente: <strong>A adoção de bioinsumos deixou de ser uma decisão puramente ambiental para se tornar uma estratégia de proteção financeira</strong>.</p>
-        <div class="card">
-            <strong>Desacoplamento do Risco Absoluto:</strong> O modelo prova que o uso de solubilizadores de fósforo e protetores celulares mantém o ROI estável em um piso de <span class="highlight">2,98x</span> na pior seca e sobe para <span class="highlight">3,28x</span> no pior excesso hídrico. Conseguimos estabilizar os retornos em
+                    <td style
