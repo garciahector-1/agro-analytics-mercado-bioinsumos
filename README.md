@@ -1,49 +1,47 @@
-# Agro-Analytics: Inteligencia Predictiva y Estrategia Comercial de Bioinsumos en el Mercosur
+# Agro-Analytics Mercosur 2026 🌾📊
 
-Este proyecto desarrolla un modelo predictivo y analítico en **PostgreSQL** enfocado en el mercado de soja del Mercosur para la campaña **2026/27**. 
+Proyecto interdisciplinario de modelado predictivo y análisis de datos enfocado en la evaluación del impacto económico y el Retorno de Inversión (ROI) del uso de bioinsumos bajo escenarios de estrés hídrico extremo en el Mercosur (Campaña 2026/27).
 
 **Origen del Proyecto:** Desarrollado desde una perspectiva interdisciplinaria que fusiona las ciencias agrarias, el análisis de datos y la **biotecnología**. Como técnico agropecuario y estudiante avanzado de biotecnología, el objetivo central es cruzar datos macroeconómicos oficiales, registros meteorológicos históricos de la NASA y ensayos de respuesta biológica (fisiología y metabolismo vegetal) para diseñar estrategias comerciales eficientes y maximizar el Retorno de la Inversión (ROI) del productor ante escenarios de estrés climático extremo.
 
 ---
 
-## 📊 Descubrimientos Clave del Modelo (Data Insights)
+## 🛠️ Arquitectura y Tecnologías del Proyecto
+* **Motor de Datos (SQL):** Procesamiento y cálculo de márgenes netos indexados, costos logísticos variables y proyecciones de rendimiento utilizando subconsultas avanzadas (CTEs) en PostgreSQL.
+* **Visualización Avanzada (Looker Studio):** Dashboard dinámico interactivo con arquitectura de doble eje para correlacionar variables financieras de diferente escala: **Márgenes Netos (Eje Izquierdo en USD/ha)** vs. **Multiplicadores de ROI (Eje Derecho)**, optimizado mediante la consolidación de escenarios combinados en la fuente de datos.
+* **Enfoque Biotecnológico/Agronómico:** Modelado de la respuesta fisiológica del cultivo ante eventos climáticos severos ("Niño Extremo" y "Niña / Secano") en tres ecorregiones clave: Zona Núcleo (Pergamino), Chaco (Chacabuco) y Brasil Cerrado (Mato Grosso).
 
-### 1. La Paradoja de El Niño en Zona Núcleo (Pergamino)
-* El rendimiento oficial por hectárea suele enmascarar pérdidas reales en años húmedos. El verdadero daño de El Niño no está en el rinde de los lotes cosechados, sino en las **hectáreas perdidas por anegamiento**.
-* Ante este escenario de asfixia radicular, el modelo demuestra que los bioestimulantes foliares (aminoácidos de shock) actúan como un turbocompresor metabólico, logrando una respuesta de **+350 kg/ha**.
-
-### 2. Eficiencia de Uso del Agua (EUA): Argentina vs. Brasil
-Mediante un análisis en espejo interprovincial, se determinó que los sistemas sobre suelos pesados (como Chacabuco, Chaco) logran duplicar la eficiencia de conversión de milímetros de lluvia en grano frente a los suelos permeables y lixiviables del Cerrado Brasileño (Mato Grosso) en años secos:
-* **Chaco (Campaña Seca):** EUA de **6.30 kg/mm** (con soplete térmico de 32.5°C).
-* **Mato Grosso (Campaña Seca):** EUA de **3.67 kg/mm** (con soplete térmico de 33.1°C).
+## 📊 Principales Insights del Modelo (Mercosur)
+1. **Logística Predictiva:** Ante alertas de "Niño Extremo" (suelos saturados que bloquean la maquinaria terrestre), el modelo activa una alerta de contratación preventiva de aviación agrícola (+USD 14/ha), defendiendo con éxito un potencial de +350 kg/ha en Zona Núcleo.
+2. **Eficiencia de la Inversión:** El gráfico interactivo de doble eje demuestra que las mayores eficiencias de retorno (picos de ROI) se logran en los escenarios de "Niño Extremo" debido al fuerte diferencial de rendimiento que defienden los inductores foliares biológicos cuando el cultivo es protegido a tiempo.
 
 ---
 
-## 💵 Inteligencia de Negocios y Matriz de Decisión (ROI Predictivo)
+## 🇧🇷 Análise de Cenários e Lógica de Negócios (Ecorregião Brasil Cerrado)
 
-El algoritmo automatizado en la base de datos calcula los costos logísticos variables (bloqueo de aplicaciones terrestres y uso obligatorio de avión por falta de piso en años con lluvias > 600 mm) para proyectar márgenes netos reales considerando un precio de soja de $300 USD/tn:
+### 1. Cenário: BRASIL_CERRADO (MATO GROSSO) - NIÑO EXTREMO
+* **Produtividade Projetada:** 3.600 kg/ha (Aumento de rendimento devido à alta pluviosidade, compensando a lixiviação com manejo biológico de solubilizadores de fósforo e fixadores de nitrogênio).
+* **Preço de Venda Comercial:** USD 0,40 / kg (USD 400 por tonelada).
+* **Faturamento Bruto Projetado:** USD 1.440,00 / ha.
+* **Estrutura de Custos:**
+  * Custo Base Indexado: USD 1.350,00 / ha.
+  * Adicional de Logística Operativa por Excesso de Umidade: **USD 14,00 / ha** (Contratação preventiva de aviação agrícola devido à saturação severa do solo que impede a entrada de maquinário terrestre).
+  * Custo Total Computado: USD 1.364,00 / ha.
+* **Resultado Financeiro:**
+  * **Margem Líquida Projetada:** **USD 76,00 / ha**
+  * **Retorno do Investimento (ROI):** **3,28x** sobre o custo do pacote tecnológico aplicado.
 
-* **Año Niño Extremo (Zona Núcleo):** Costo tecnológico de $32.0 USD/ha (Insumo + Avión). Ingreso extra de $105.0 USD/ha. **Margen Neto Limpio: +$73.0 USD/ha** con un **ROI de 3.28**.
-* **Año Seco / Soplete (Chaco):** Costo tecnológico de $25.0 USD/ha (Insumo + Mosquito). Ingreso extra de $63.0 USD/ha. **Margen Neto Limpio: +$38.0 USD/ha** con un **ROI de 2.52**.
+### 2. Cenário: BRASIL_CERRADO (MATO GROSSO) - NIÑA / SECO
+* **Produtividade Projetada:** 2.100 kg/ha (Quebra severa de rendimento causada pelo estresse hídrico prolongado e altas temperaturas).
+* **Preço de Venda Comercial:** USD 0,43 / kg (Valorização de mercado por escassez regional).
+* **Faturamento Bruto Projetado:** USD 903,00 / ha.
+* **Estrutura de Custos:**
+  * Custo Base Indexado: USD 840,00 / ha.
+  * Adicional de Logística Operativa: **USD 0,00 / ha** (Condições secas que permitem aplicação terrestre convencional estável).
+  * Custo Total Computado: USD 840,00 / ha.
+* **Resultado Financeiro:**
+  * **Margem Líquida Projetada:** **USD 63,00 / ha**
+  * **Retorno do Investimento (ROI):** **2,98x** (Eficiência defensiva do bioinsumo ativa na proteção do teto produtivo mínimo).
 
 ---
-
-## 🛠️ Tecnologías Utilizadas
-* **Base de Datos:** PostgreSQL / pgAdmin 4
-* **Lógica Avanzada:** Consultas con Expresiones Comunes de Tabla (CTEs), uniones analíticas (`UNION ALL`), funciones de agregación condicional (`CASE WHEN`) y control de división por cero (`NULLIF`).
-
----
-
-## 🇧🇷 Resumo Executivo para o Mercado Brasileiro (Estratégia de Conquista)
-
-**Objetivo:** Direcionar as equipes de Marketing e Vendas para o desembarque estratégico de bioinsumos em Mato Grosso (Cerrado) e Paraná (Sul) com base nas vulnerabilidades climáticas identificadas no modelo.
-
-### 🎯 Diretrizes Estratégicas por Região:
-
-* **1. Foco Cerrado (Mato Grosso - Cenário El Niño Extremo):**
-    * **Diagnóstico:** A Eficiência do Uso da Água (EUA) cai para os níveis mais baixos do modelo (**2.48 kg/mm**) devido ao alto volume de chuvas monçônicas ($1320\text{ mm}$) que lavam os nutrientes nos solos arenosos (Oxisolos).
-    * **Abordagem Comercial:** O argumento de vendas não deve focar em "tolerância à seca", mas sim em **eficiência nutricional e retenção**. A estratégia ideal é posicionar solubilizadores biológicos de fósforo e fixadores de nitrogênio para mitigar a lixiviação do investimento químico do produtor. Projeção de **ROI de 2.29**.
-
-* **2. Foco Sul (Paraná - Cenário Excessos Hídricos):**
-    * **Diagnóstico:** Assim como na Zona Núcleo argentina, o excesso de umidade e o estresse por asfixia radicular travam os tetos produtivos no enchimento de grãos.
-    * **Abordagem Comercial:** Posicionamento agressivo de aminoácidos foliares para a **recuperação metabólica pós-alagamento**. O argumento técnico foca em salvar os nós reprodutivos da planta quando as condições de solo impedem a entrada de maquinário terrestre convencional.
+*Proyecto desarrollado como parte de mi portafolio profesional en Data Analytics aplicado al sector Agrotech (Campaña 2026/27).*
