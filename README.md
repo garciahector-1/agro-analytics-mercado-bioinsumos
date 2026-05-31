@@ -13,6 +13,7 @@ Proyecto interdisciplinario de modelado predictivo y análisis de datos enfocado
 ## 🚀 Presentación Ejecutiva Interactiva
 Podés ver la presentación unificada (en Español y Portugués) con el motor de datos y el dashboard integrado en tiempo real ingresando acá:
 👉 [Agro-Analytics Mercosur - Presentación Ejecutiva](https://garciahector-1.github.io/agro-analytics-mercado-bioinsumos/)
+
 **Origen del Proyecto:** Desarrollado desde una perspectiva interdisciplinaria que fusiona las ciencias agrarias, el análisis de datos y la **biotecnología**. Como técnico agropecuario y estudiante avanzado de biotecnología, el objetivo central es cruzar datos macroeconómicos oficiales, registros meteorológicos históricos de la NASA y ensayos de respuesta biológica (fisiología y metabolismo vegetal) para diseñar estrategias comerciales eficientes y maximizar el Retorno de la Inversión (ROI) del productor ante escenarios de estrés climático extremo.
 
 ---
