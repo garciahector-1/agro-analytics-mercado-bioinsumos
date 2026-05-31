@@ -44,4 +44,12 @@ Proyecto interdisciplinario de modelado predictivo y análisis de datos enfocado
   * **Retorno do Investimento (ROI):** **2,98x** (Eficiência defensiva do bioinsumo ativa na proteção do teto produtivo mínimo).
 
 ---
-*Proyecto desarrollado como parte de mi portafolio profesional en Data Analytics aplicado al sector Agrotech (Campaña 2026/27).*
+---
+
+## 📩 Contacto y Colaboración
+Desarrollado por **Héctor García** - *Técnico Agropecuario y Analista de Datos*.
+
+Si querés conocer más sobre el modelo, cruzamiento de datos climatológicos o discutir oportunidades en el sector Agrotech, podés contactarme en:
+* **💼 LinkedIn:** [Héctor García](https://www.linkedin.com/in/h%C3%A9ctor-garc%C3%ADa-aa4687227/)
+* **📩 Email:** [garciahector4toa@gmail.com](mailto:garciahector4toa@gmail.com)
+* **💻 GitHub:** [garciahector-1](https://github.com/garciahector-1)
