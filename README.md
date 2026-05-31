@@ -11,7 +11,7 @@
 Proyecto interdisciplinario de modelado predictivo y análisis de datos enfocado en la evaluación del impacto económico y el Retorno de Inversión (ROI) del uso de bioinsumos bajo escenarios de estrés hídrico extremo en el Mercosur (Campaña 2026/27).
 
 ## 🚀 Presentación Ejecutiva Interactiva
-Podés ver la presentación unificada (en Español y Portugués) con el motor de datos y el dashboard integrado en tiempo real ingresando acá:
+Podés ver la presentación unificada con el motor de datos y el dashboard integrado en tiempo real ingresando acá:
 👉 [Agro-Analytics Mercosur - Presentación Ejecutiva](https://garciahector-1.github.io/agro-analytics-mercado-bioinsumos/)
 
 **Origen del Proyecto:** Desarrollado desde una perspectiva interdisciplinaria que fusiona las ciencias agrarias, el análisis de datos y la **biotecnología**. Como técnico agropecuario y estudiante avanzado de biotecnología, el objetivo central es cruzar datos macroeconómicos oficiales, registros meteorológicos históricos de la NASA y ensayos de respuesta biológica (fisiología y metabolismo vegetal) para diseñar estrategias comerciales eficientes y maximizar el Retorno de la Inversión (ROI) del productor ante escenarios de estrés climático extremo.
@@ -29,31 +29,31 @@ Podés ver la presentación unificada (en Español y Portugués) con el motor de
 
 ---
 
-## 🇧🇷 Análise de Cenários e Lógica de Negócios (Ecorregião Brasil Cerrado)
+## 🇦🇷 Análisis de Escenarios y Lógica de Negocios (Ecorregión Brasil Cerrado)
 
-### 1. Cenário: BRASIL_CERRADO (MATO GROSSO) - NIÑO EXTREMO
-* **Produtividade Projetada:** 3.600 kg/ha (Aumento de rendimento devido à alta pluviosidade, compensando a lixiviação com manejo biológico de solubilizadores de fósforo e fixadores de nitrogênio).
-* **Preço de Venda Comercial:** USD 0,40 / kg (USD 400 por tonelada).
-* **Faturamento Bruto Projetado:** USD 1.440,00 / ha.
-* **Estrutura de Custos:**
-  * Custo Base Indexado: USD 1.350,00 / ha.
-  * Adicional de Logística Operativa por Excesso de Umidade: **USD 14,00 / ha** (Contratação preventiva de aviação agrícola devido à saturação severa do solo que impede a entrada de maquinário terrestre).
-  * Custo Total Computado: USD 1.364,00 / ha.
-* **Resultado Financeiro:**
-  * **Margem Líquida Projetada:** **USD 76,00 / ha**
-  * **Retorno do Investimento (ROI):** **3,28x** sobre o custo do pacote tecnológico aplicado.
+### 1. Escenario: BRASIL_CERRADO (MATO GROSSO) - NIÑO EXTREMO
+* **Productividad Proyectada:** 3.600 kg/ha (Aumento de rendimiento debido a la alta pluviosidad, compensando la lixiviación con manejo biológico de solubilizadores de fósforo y fijadores de nitrógeno).
+* **Precio de Venta Comercial:** USD 0,40 / kg (USD 400 por tonelada).
+* **Facturación Bruta Proyectada:** USD 1.440,00 / ha.
+* **Estructura de Costos:**
+  * Costo Base Indexado: USD 1.350,00 / ha.
+  * Adicional de Logística Operativa por Exceso de Humedad: **USD 14,00 / ha** (Contratación preventiva de aviación agrícola debido a la saturación severa del suelo que impide la entrada de maquinaria terrestre).
+  * Costo Total Computado: USD 1.364,00 / ha.
+* **Resultado Financiero:**
+  * **Margen Neto Proyectado:** **USD 76,00 / ha**
+  * **Retorno de la Inversión (ROI):** **3,28x** sobre el costo del paquete tecnológico aplicado.
 
-### 2. Cenário: BRASIL_CERRADO (MATO GROSSO) - NIÑA / SECO
-* **Produtividade Projetada:** 2.100 kg/ha (Quebra severa de rendimento causada pelo estresse hídrico prolongado e altas temperaturas).
-* **Preço de Venda Comercial:** USD 0,43 / kg (Valorização de mercado por escassez regional).
-* **Faturamento Bruto Projetado:** USD 903,00 / ha.
-* **Estrutura de Custos:**
-  * Custo Base Indexado: USD 840,00 / ha.
-  * Adicional de Logística Operativa: **USD 0,00 / ha** (Condições secas que permitem aplicação terrestre convencional estável).
-  * Custo Total Computado: USD 840,00 / ha.
-* **Resultado Financeiro:**
-  * **Margem Líquida Projetada:** **USD 63,00 / ha**
-  * **Retorno do Investimento (ROI):** **2,98x** (Eficiência defensiva do bioinsumo ativa na proteção do teto produtivo mínimo).
+### 2. Escenario: BRASIL_CERRADO (MATO GROSSO) - NIÑA / SECO
+* **Productividad Proyectada:** 2.100 kg/ha (Quiebre severo de rendimiento causado por el estrés hídrico prolongado y altas temperaturas).
+* **Precio de Venta Comercial:** USD 0,43 / kg (Valorización de mercado por escasez regional).
+* **Facturación Bruta Proyectada:** USD 903,00 / ha.
+* **Estructura de Costos:**
+  * Costo Base Indexado: USD 840,00 / ha.
+  * Adicional de Logística Operativa: **USD 0,00 / ha** (Condiciones secas que permiten aplicación terrestre convencional estable).
+  * Costo Total Computado: USD 840,00 / ha.
+* **Resultado Financiero:**
+  * **Margen Neto Proyectado:** **USD 63,00 / ha**
+  * **Retorno de la Inversión (ROI):** **2,98x** (Eficiencia defensiva del bioinsumo activa en la protección del techo productivo mínimo).
 
 ---
 ---
